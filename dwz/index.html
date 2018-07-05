@@ -415,7 +415,7 @@ template {
 <div id="app">
     <!--<h1>网站调试中，功能不可用 有问题联系我 Q 2099566778</h1>-->
     <marquee class="tip">
-        卢本伟牛逼
+        有问题请联系我
         <img src="https://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/a1/2018new_doge02_org.png" alt="doge" width="14px">
     </marquee>
     <h1 class="title">短网址生成</h1>
@@ -468,7 +468,7 @@ template {
                     alert('请输入网址');
                     return;
                 }
-                axios.get("https://k186c67940.imwork.net:15263/dwz?url="+encodeURIComponent(vm.input)+"&type="+vm.radioType)
+                axios.get("http://k186c67940.imwork.net:15263/dwz?url="+encodeURIComponent(vm.input)+"&type="+vm.radioType)
                     .then(function (response) {
                         if (response.status === 200 && !response.data.error) {
                             vm.input = response.data.url;
