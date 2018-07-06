@@ -468,7 +468,7 @@ template {
                     alert('请输入网址');
                     return;
                 }
-                axios.get("//k186c67940.imwork.net:15263/dwz?url="+encodeURIComponent(vm.input)+"&type="+vm.radioType)
+                axios.get("//103.46.128.43:15263/dwz?url="+encodeURIComponent(vm.input)+"&type="+vm.radioType)
                     .then(function (response) {
                         if (response.status === 200 && !response.data.error) {
                             vm.input = response.data.url;
